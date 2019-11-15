@@ -1,8 +1,5 @@
 {
   "projects": {
     "default": "msrp-dev01",
-    "dev": "rocket-dev01",
-    "production": "zerda-dcf76",
-    "staging": "rocketnightly"
   }
 }
