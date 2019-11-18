@@ -65,4 +65,4 @@ i  Writing project information to .firebaserc...
 # TODO
 1. To seperate the upload process from DEV and PROD, i.e. setup another repo for PROD uploading (only FQDNs are different)   
 2. Currently the 'push' will trigger uploding process, it'll need to be changed to only RM/QA/SRE/Backend can do this. 
-
+3. Firebase Hosting will keep files of every deployed version. We need to delete old deployed versions to prevent wasting space. (1G storage space for free) https://firebase.google.com/docs/hosting/reference/rest/v1beta1/sites.versions/delete
