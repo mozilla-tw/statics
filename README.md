@@ -62,6 +62,21 @@ i  Writing project information to .firebaserc...
 - Add the pictures to /public folder, and push to repo, it'll automatically deploy pictures to hosting, ex: https://msrp-dev01.firebaseapp.com/nut.png
 
 
+# Deploy to Preview/Production 
+- This repo only automate the step from Github to msrp-dev01, need a person having firebase "Editor" permission of Preview and Production to deploy to those two 
+```
+# cd $repo_dir
+# vi .firebaserc; cat .firebaserc  // change the defult project to Preview or Production
+{
+  "projects": {
+    "default": "rocketnightly"
+  }
+}
+
+# firebase deploy --only hosting  // deploy pictures 
+
+```
+
 # TODO
 1. To seperate the upload process from DEV and PROD, i.e. setup another repo for PROD uploading (only FQDNs are different)   
 2. Currently the 'push' will trigger uploding process, it'll need to be changed to only RM/QA/SRE/Backend can do this. 
