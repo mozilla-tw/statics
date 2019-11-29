@@ -65,15 +65,23 @@ i  Writing project information to .firebaserc...
 # Deploy to Preview/Production 
 - This repo only automate the step from Github to msrp-dev01, need a person having firebase "Editor" permission of Preview and Production to deploy to those two 
 ```
-# cd $repo_dir
-# vi .firebaserc; cat .firebaserc  // change the defult project to Preview or Production
-{
-  "projects": {
-    "default": "rocketnightly"
-  }
-}
+cd $repo_dir
+firebase use rocketnightly // switch to Preview 
+firebase deploy --only hosting  // upload pictures 
 
-# firebase deploy --only hosting  // deploy pictures 
+=== Deploying to 'rocketnightly'...
+
+i  deploying hosting
+i  hosting[rocketnightly]: beginning deploy...
+i  hosting[rocketnightly]: found 29 files in public
+✔  hosting[rocketnightly]: file upload complete
+i  hosting[rocketnightly]: finalizing version...
+✔  hosting[rocketnightly]: version finalized
+i  hosting[rocketnightly]: releasing new version...
+✔  hosting[rocketnightly]: release complete
+
+✔  Deploy complete!
+
 
 ```
 
