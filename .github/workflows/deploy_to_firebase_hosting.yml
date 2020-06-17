@@ -13,7 +13,12 @@ jobs:
     steps:
       - name: Checkout the repository
         uses: actions/checkout@master
-      
+     
+      - name: Use Preview 
+        uses: w9jds/firebase-action@master
+        with: 
+          args: use PREVIEW
+
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
