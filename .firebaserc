@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "msrp-dev01"
+    "default": "msrp-dev01",
+    "PREVIEW": ${{ secrets.PREVIEW }},
+    "PRODUCTION": ${{ secrets.PRODUCTION }} 
   }
 }
