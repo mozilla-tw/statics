@@ -66,6 +66,8 @@ i  Writing project information to .firebaserc...
 - This repo only automate the step from Github to msrp-dev01, need a person having firebase "Editor" permission of Preview and Production to deploy to those two 
 ```
 cd $repo_dir
+./deploy.sh 
+
 firebase use rocketnightly // switch to Preview 
 firebase deploy --only hosting  // upload pictures 
 
@@ -82,6 +84,7 @@ i  hosting[rocketnightly]: releasing new version...
 
 ✔  Deploy complete!
 
+[ommited]
 
 ```
 
